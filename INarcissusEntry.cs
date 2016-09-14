@@ -4,5 +4,6 @@
 	{
 		string Name { get; }
 		string FullName { get; }
+		string FriendlyName { get; }
 	}
 }

@@ -52,6 +52,7 @@ namespace LunraGames.Reflection
 		#region IEntry implementation
 		public string Name { get { return Type.Name; } }
 		public string FullName { get { return Type.FullName; } }
+		public string FriendlyName { get { return Name; } }
 		#endregion
 	}
 }

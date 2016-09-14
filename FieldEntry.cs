@@ -18,6 +18,7 @@ namespace LunraGames.Reflection
 		#region IEntry implementation
 		public string Name { get { return Field.Name; } }
 		public string FullName { get { return Field.DeclaringType.FullName + "." + Name; } }
+		public string FriendlyName { get { return Field.DeclaringType.Name + "." + Name; } }
 		#endregion
 	}
 }
