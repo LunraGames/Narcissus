@@ -19,7 +19,7 @@ namespace LunraGames.Reflection
 				if (assembly == null)
 				{
 					var assemblyInstance = (allAssemblies ?? (allAssemblies = AppDomain.CurrentDomain.GetAssemblies())).FirstOrDefault(a => a.GetName().Name == assemblyName);
-					if (assemblyInstance == null) throw new NullReferenceException("Assembly "+assemblyName+" doesn't exist");
+					if (assemblyInstance == null) continue;
 
 					assembly = GetAssemblies(assemblyInstance).First();
 				}
